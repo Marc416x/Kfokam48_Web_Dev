@@ -54,15 +54,20 @@ section {
 
 .cta {
     background: linear-gradient(#8E86B5, #ACAEED);
+    display: inline-block;
     color: white;
     border-radius: 50px;
-     padding: 20px 30px;
+    padding: 20px 30px;
+    margin-top: 20px;
 }
-
+.main + div {
+    text-align: center;
+}
 .main {
     border-right: solid 1px #8e86b5;
     border-bottom: solid 1px #8e86b5;
     padding: 50px;
+    margin-bottom: 60px;
 }
 
 .main h2 {
@@ -79,13 +84,12 @@ section {
 }
 
 a:hover {
-    /* color: crimson;
-    font-size: 1.5em; */
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .cta:hover {
     background: linear-gradient(#696484, #8788BA);
+    text-decoration: none;
 }
 
 .icon-link:hover {
@@ -107,18 +111,14 @@ a:hover {
  .container2 div {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .container2 a {
     width: fit-content;
 }
 
-/* .container2 p {
-    width: fit-content;
-} */
  .container2 {
-    /* background-color: red; */
     display: flex;
     width: 58%;
     margin: auto;
@@ -145,7 +145,6 @@ a:hover {
     width: 65%;
     margin: auto;
     padding: 40px 80px;
-    /* background-color: red; */
 }
 
 .pf-main h1{
@@ -156,6 +155,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
+    padding: 50px 80px 1px 80px;
     gap: 15px;
 }
 .grid1 img, .grid2 img {
@@ -171,7 +171,7 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     gap: 15px;
-    padding: 30px;
+    padding: 50px 80px;
 }
 .pf-main section {
     padding: 0;
@@ -186,18 +186,28 @@ a:hover {
 }
 
 .grid1 + h2 {
-    /* color: #1f2039;
-    background-color: white;
-    padding: 85px 80px 27px 80px;
-    font-size: 24px;
-    letter-spacing: -0.05em; */
     padding-top: 0;
 }
-.grid1, .grid2 {
-    padding: 50px 80px;
-    
+
+.grid1 a, .grid2 a {
+    position: relative;
 }
 
-.grid1 {
-    padding-bottom: 1px;
+.grid1 div, .grid2 div {
+    position: absolute;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.grid1 a:hover div, .grid2 a:hover div {
+    display: flex;
 }
