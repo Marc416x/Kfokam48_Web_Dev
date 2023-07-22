@@ -1,0 +1,71 @@
+.main + div {
+    text-align: center;
+}
+
+.main {
+    border-right: solid 1px #8e86b5;
+    border-bottom: solid 1px #8e86b5;
+    padding: 50px;
+    margin-bottom: 60px;
+}
+
+.main h2 {
+    margin: 30px 0 80px;
+    text-align: center;
+}
+
+.main ul {
+    margin-top: 30px;
+}
+
+.about-main {
+    margin: auto;
+}
+
+.container2a {
+    width: 50%;
+    margin: auto;
+}
+
+.container2a h1 {
+    text-align: center;
+}
+
+.container2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container2 a {
+    width: fit-content;
+}
+
+.container2 {
+    display: flex;
+    width: 58%;
+    margin: auto;
+    text-align: justify;
+    gap: 75px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+caption {
+    margin-bottom: 80px;
+
+}
+
+td, th {
+    border: 1px solid #A5B4FC;
+    padding: 80px;
+}
+
+th {
+    padding: 15px;
+}

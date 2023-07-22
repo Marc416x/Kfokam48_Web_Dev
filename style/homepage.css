@@ -1,0 +1,38 @@
+.container2 div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container2 a {
+    width: fit-content;
+}
+
+.container2 {
+    display: flex;
+    width: 58%;
+    margin: auto;
+    text-align: justify;
+    gap: 75px;
+}
+
+.home-main {
+    background-color: white;
+}
+
+.home-main h2 {
+    text-align: center;
+    color: #1f2039;
+    font-size: 1.6em;
+    padding-bottom: 50px;
+}
+
+.home-main nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    width: 65%;
+    margin: auto;
+    padding: 40px 80px;
+}
