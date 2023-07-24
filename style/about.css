@@ -6,6 +6,8 @@
     border-right: solid 1px #8e86b5;
     border-bottom: solid 1px #8e86b5;
     padding: 50px;
+    width: 50%;
+    margin: auto;
     margin-bottom: 60px;
 }
 
@@ -19,11 +21,6 @@
 }
 
 .about-main {
-    margin: auto;
-}
-
-.container2a {
-    width: 50%;
     margin: auto;
 }
 
@@ -68,4 +65,19 @@ td, th {
 
 th {
     padding: 15px;
+}
+
+@media screen and (max-width: 944px) {
+    section + section {
+        display: none;
+    }
+
+    .container2a {
+        padding: 80px 2px;
+    }
+
+    .main {
+        padding: 20px 10px;
+        width: 90%;
+    }
 }

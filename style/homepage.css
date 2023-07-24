@@ -1,23 +1,16 @@
-.container2 div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.container2 a {
-    width: fit-content;
-}
-
 .container2 {
     display: flex;
-    width: 58%;
+    max-width: 1000px;
+    gap: 55px;
     margin: auto;
-    text-align: justify;
-    gap: 75px;
 }
+ .container2 h1, .container2 p {
+    margin-bottom: 10px;
+ }
 
 .home-main {
     background-color: white;
+    padding: 80px;
 }
 
 .home-main h2 {
@@ -27,18 +20,13 @@
     padding-bottom: 50px;
 }
 
-.home-main nav {
+.home-main nav div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 18px;
-    width: 65%;
-    margin: auto;
-    padding: 40px 80px;
+    gap: 15px;
+    margin-bottom: 15px;
 }
-section {
-    padding: 80px;
-}
+
 .contact-section h2 {
     text-align: center;
     color: #A5B4FC;
@@ -48,8 +36,8 @@ section {
 form {
     color: white;
     display: flex;
-    flex-direction: column;
     max-width: 1000px;
+    flex-direction: column;
     margin: auto;
 }
 
@@ -63,21 +51,80 @@ input, textarea {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
-    justify-content: space-between;
+    gap: 15px;
 }
 
 .form1a input[type="email"], .form1a input[type="text"] {
-    width: 460px;
-    height: 45px;
-    padding: 0px 15px;
+    padding: 15px;
+}
+
+.form1b {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 }
 
 label {
     line-height: 2.5em;
 }
 
-.cta {
+.contact-section .cta {
     width: fit-content;
     margin: auto;
     margin-top: 30px;
+}
+
+@media screen and (max-width: 944px) {
+
+    section img {
+        width: 98%;
+        object-fit: cover;
+    }
+    .container2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .container2 div {
+        text-align: center;
+    }
+
+    section {
+        padding: 20px 5px;
+    }
+
+    form {
+        padding: 5px;
+    }
+
+    .form1a {
+        flex-direction: column;
+    }
+
+    #message {
+        height: 150px;
+    }
+    .home-main {
+        padding: 20px 0px;
+        padding-bottom: 0;
+    }
+    .home-main nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 0;
+        padding: 4px 0px;
+    }
+
+    h2, .home-main h2 {
+        padding-bottom: 20px;
+        font-size: 1.3em;
+    }
 }
