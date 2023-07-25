@@ -18,8 +18,9 @@ body {
 }
 
 h1 {
-    font-size: 3.5em;
-    font-weight: 600;
+    font-size: 3.65em;
+    font-weight: 550;
+    letter-spacing: -0.03em;
     color: #A5B4FC;
     font-family: 'montserrat', sans-serif;
 }
@@ -51,7 +52,6 @@ header, footer {
 
 section {
     padding: 80px;
-    /* background-color: red; */
 }
 
 .cta {
@@ -77,33 +77,44 @@ a:hover {
     opacity: 0.5;
 }
 
-.container1 {
+.icon-link {
+    margin-left: 30px;
+}
+
+footer, nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
 }
 
-.container1 div a {
-    margin-left: 30px;
+h2, th {
+    letter-spacing: -0.03em;
 }
 
-@media screen and (max-width: 944px) {
-    * {
-        font-size: 16px;
-    }
-
-    header > .container1 {
+nav a {
+    margin-left: 30px;
+}
+ 
+@media screen and (max-width: 996px) {
+    header nav {
         flex-direction: column;
-        margin: 0;
-        gap: 15px;
+        align-items: center;
+        justify-content: center;
     }
 
-    .container1 {
-        margin: 0;
+    header nav img {
+        margin-bottom: 20px;
     }
-
-    footer {
+    
+    header, footer {
         padding: 20px;
-    } 
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
 }

@@ -1,10 +1,10 @@
-.container2 {
+.home-intro {
     display: flex;
     max-width: 1000px;
     gap: 55px;
     margin: auto;
 }
- .container2 h1, .container2 p {
+ .home-intro h1, .home-intro p {
     margin-bottom: 10px;
  }
 
@@ -16,11 +16,10 @@
 .home-main h2 {
     text-align: center;
     color: #1f2039;
-    font-size: 1.6em;
-    padding-bottom: 50px;
+    margin-bottom: 80px;
 }
 
-.home-main nav div {
+.home-main div {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -47,18 +46,14 @@ input, textarea {
     padding: 15px;
 }
 
-.form1a {
+.form-name-email {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
     gap: 15px;
 }
 
-.form1a input[type="email"], .form1a input[type="text"] {
-    padding: 15px;
-}
-
-.form1b {
+.form-column {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -74,57 +69,40 @@ label {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 996px) {
 
-    section img {
-        width: 98%;
-        object-fit: cover;
-    }
-    .container2 {
+    .home-intro img {
+        width: 100%;
+    } 
+
+    .home-intro {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
 
-    h1 {
-        font-size: 2.5em;
+    .home-intro div {
         text-align: center;
     }
 
-    .container2 div {
-        text-align: center;
+    .contact-section, section {
+        padding: 50px 20px;
     }
 
-    section {
-        padding: 20px 5px;
-    }
-
-    form {
-        padding: 5px;
-    }
-
-    .form1a {
+    .form-name-email {
         flex-direction: column;
     }
 
-    #message {
-        height: 150px;
-    }
     .home-main {
-        padding: 20px 0px;
-        padding-bottom: 0;
-    }
-    .home-main nav div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 0;
-        padding: 4px 0px;
+        padding: 20px;
     }
 
-    h2, .home-main h2 {
-        padding-bottom: 20px;
-        font-size: 1.3em;
+    .home-main div {
+        flex-direction: column;
+    }
+
+    .contact-section h2 {
+        margin-bottom: 50px;
     }
 }

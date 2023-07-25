@@ -1,49 +1,22 @@
-.main + div {
+.main-container + div, .about-main > section h1, h2 {
     text-align: center;
 }
 
-.main {
+.main-container {
     border-right: solid 1px #8e86b5;
     border-bottom: solid 1px #8e86b5;
     padding: 50px;
     width: 50%;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
-.main h2 {
+.main-container h2 {
     margin: 30px 0 80px;
-    text-align: center;
 }
 
-.main ul {
+.main-container ul {
     margin-top: 30px;
-}
-
-.about-main {
-    margin: auto;
-}
-
-.container2a h1 {
-    text-align: center;
-}
-
-.container2 div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.container2 a {
-    width: fit-content;
-}
-
-.container2 {
-    display: flex;
-    width: 58%;
-    margin: auto;
-    text-align: justify;
-    gap: 75px;
 }
 
 table {
@@ -55,7 +28,6 @@ table {
 
 caption {
     margin-bottom: 80px;
-
 }
 
 td, th {
@@ -67,17 +39,20 @@ th {
     padding: 15px;
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 996px) {
+    
     section + section {
         display: none;
     }
 
-    .container2a {
-        padding: 80px 2px;
-    }
+ /* Looks better in my opinion */
 
-    .main {
+    .about-main > section {
+        padding: 80px 20px;
+    } 
+
+    .main-container {
         padding: 20px 10px;
         width: 90%;
     }
-}
+} 

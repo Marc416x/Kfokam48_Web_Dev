@@ -2,49 +2,31 @@ section + section {
     background-color: white;
 }
 
-.pf-main h1{
-    padding: 80px;
-}
-
 .grid1 {
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
-    padding: 50px 80px 1px 80px;
     gap: 15px;
 }
 
 .grid1 img, .grid2 img {
-    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .grid2 {
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     gap: 15px;
-    padding: 50px 80px;
-}
-
-.pf-main section {
-    padding: 0;
 }
 
 .pf-main h2 {
     color: #1f2039;
-    background-color: white;
-    padding: 85px 80px 27px 80px;
+    margin-bottom: 80px;
     font-size: 24px;
-    letter-spacing: -0.05em;
-}
-
-.grid1 + h2 {
-    padding-top: 0;
+    letter-spacing: -0.04em;
 }
 
 .grid1 a, .grid2 a {
@@ -71,21 +53,10 @@ section + section {
     display: flex;
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 996px) {
     
-    .grid1 {
+    .grid1, .grid2 {
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
-        padding: 0px 10px;
-    }
-
-    .grid2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px;
-        padding: 0px 10px;
-    }
-
-    .pf-main h2 {
-        padding-left: 10px;
+        gap: 15px;
     }
 }
